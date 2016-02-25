@@ -1,2 +1,11 @@
 Clone this repository and visualize the data.
 
+Vizualize data code:
+
+    #By name
+    counts=table(Tmerge$screenName)
+    barplot(counts, las=2)
+
+    #By time of day
+    hist(Tmerge$created, breaks = "d")
+
