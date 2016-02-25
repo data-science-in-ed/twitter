@@ -6,6 +6,6 @@ Vizualize data code:
     counts=table(Tmerge$screenName)
     barplot(counts, las=2)
 
-    #By time of day
+    #By day
     hist(Tmerge$created, breaks = "d")
 
