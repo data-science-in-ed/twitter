@@ -10,3 +10,10 @@ Vizualize data code:
     hist(Tmerge$created, breaks = "d")
 
 You may need to use as.POSIXt() to convert to date/time format.
+
+TData = read.csv("~/Documents/NYU/Twitter 1/Twitter_data.csv", header=TRUE, stringsAsFactors=T, fill = T)
+
+counts=table(TData$screenName)
+barplot(counts, las=2)
+
+hist(as.POSIXct(TData$created), breaks = "d")
